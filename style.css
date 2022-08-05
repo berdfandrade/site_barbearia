@@ -1,0 +1,230 @@
+/* Lembre-se que o CSS, se comporta em "caixas" */
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* hover quer dizer; quando o mouse passa por cima */
+/* isso se trata do comportamento do elemento */
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 1px dashed black;
+  border-radius: 10px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produtos li:hover {
+  /* Isso vai mudar a cor da borda quando o mouse passar por cima. */
+  border-color: #c78c19;
+}
+
+.produtos li:hover h2 {
+  /* Não funcionaria se colocassemos no li: hover normal
+    Precisamos, especificar que o que queremos que seja alterado quando o mouse passar, seja o elemento h2 */
+  font-size: 35px;
+}
+.produtos li:active {
+  /* Isso vai mudar o comportamento do elemento, quando o mouse clicar. Quando estiver ativo */
+  border-color: aquamarine;
+}
+
+.produto-preco {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  margin: 10px 0 0; /* isso é o mesmo que escrever margin-top 10px; */
+}
+
+.produto-descricao {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  background: url("bg.jpg"); /* O Css por padrão, vai copiando e colando aquela imagem ifinitas vezes, até ocupar totalmente o fundo da imagem. */
+  padding: 40px 0px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #ffffff;
+  margin: 20px 0 0;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+/* Lembrando que quando temos duas tags, meio que temos o "dobro" da força do seletor */
+
+form label,
+form legend {
+  /* Quando eu quero colocar mais um elemento no CSS, eu uso a vírgula( , ) */
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0px 20px;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+
+  /* O interessante é que você pode criar uma transição de propriedades que você já conehce... */
+}
+
+.enviar:hover {
+  background: darkorange;
+  cursor: pointer; /* Isso aqui faz o cursor aparecer como clicável */
+  transform: scale(1.01); /* Não é %, tenho que colocar sem a porcentagem */
+}
+
+/* Porém a classe, é superior ao marcador */
+/* E o indentificador é superior a classe */
+/* Então a ordem é id > class > marcador */
+/* O ideal é usar classes, pois ele não fraco como o marcador, mas também não é específico como o "id", que só pode ser usado dentro daquele elemento. */
+
+/* O inline, é mais forte ainda, pois ele está no HTML, e não no CSS. */
+/* inline > id > class > marcador */
+
+table {
+  margin: 20px 0 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+/* CSS da página inicial */
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em; /* em é o tamanho proporcional em PX. 2 em, quer dizer que o tamanho é duas vezes maior que o tamanho base */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1em 0 1em;
+  clear: right;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.imagembeneficios {
+  width: 60%;
+}
+
+.utensilios {
+  margin: 0 20px 20px 0;
+  width: 120px;
+  float: right;
+}
+
+.mapa {
+  padding: 3em 0;
+}
+
+.mapa p{
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.video{
+  width: 560px;
+  margin: 1em auto;
+}

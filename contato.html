@@ -1,0 +1,115 @@
+<!DOCTYPE html
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contato - Barbearia Bernardo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css" > 
+    <link rel ="stylesheet" href="style.css">
+    
+<!-- Sempre que estamos fassando uma informação que o usuário deu, para a página da web, estamos usando um formulário -->
+
+</head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png"></h1>
+                <nav> 
+                    <ul class="navegacao">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>       
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+            <!-- Formulários > Um input que pega a informação e um input para enviar aqueles dados -->
+
+            <form>
+                <!-- toda tag de input tem que ter um tipo -->
+                <label for="nomesobrenome">Nome e sobrenome</label> <!-- Dentro do formul[ario, usamos uma etiqueta para um input que se chama label. -->
+                <input class="input-padrao" type="text" id="nomesobrenome" required > <!-- O usuário vai digitar texto. Isso aqui, cria aquela caixinha. Wow... fácil demais. Além disso, o "required", faz com que seja obrigatório o preechimento dessa caixa. -->
+                <label for="email ">Email</label>
+                <input class="input-padrao" type="email" id="email" required placeholder="seuemail@dominio.com" >
+
+                <label for="telefone">Telefone</label>
+                <input class="input-padrao" type="tel" id="telefone " required placeholder="(XX) XXXXX-XXXX ">
+                <!-- Não é tipo number, é tipo tel... -->
+
+                <!--O placeholder, vai mostrar um texto de sugestão ante de você escrever o email, telefone, etc... -->
+
+                <!-- Quando eu coloco um value, eu altero o que aparece no botão de submit -->
+
+                <!-- Isso é quando eu quero que o usuário tenha a possibilidade de colocar mais de uma linha de texto. Basicamente uma caixa de texto. Diferente da tag de input, a textarea é uma tag de conteúdo, portanto ela abre e fecha.-->
+
+                <label for="mensagem">Mensagem</label>
+                <textarea class="input-padrao" name="" id="mensagem" cols="70" rows="10"></textarea required> 
+                
+                <!-- Quando eu crio um input do tipo radio, eu preciso de uma identificação, para que eles permanecem apenas "um" marcado por vez. Daí, temos que criar uma nova propriedade que é o name (name="contato")-->
+                
+                <!-- Assim fica mais fácil de organizar... Todas essas linhas são referentes aquela única entrada de dados.  -->
+
+            <fieldset>
+                <p class="teste" id="teste">Como prefere o nosso contato?</p>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+               
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+               
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="telefone" id="radio-whatsapp" checked>WhatsApp</label>
+                
+            </fieldset> 
+
+        <!-- Fielset pode ser usado para organizar melhor o código, ao invés de ficar fazendo <div> No fieldset não temos parágrafo, temos ttítulo, e ele é chamado de legend -->
+            
+        <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+        </fieldset>
+
+        
+        <label class ="checkbox"><input type="checkbox" checked>Gostaria de receber nossa novidades por e-mail?</label>
+
+        <input class="enviar" type="submit" value="Enviar formulário">     
+            </form> 
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+            </tr>
+             <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        </main>
+        <footer>
+            <img src="logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Bernardo - 2022</p>
+        </footer>
+    </body>
+</html>

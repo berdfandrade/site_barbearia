@@ -1,0 +1,64 @@
+body {
+  background: #cccccc;
+}
+
+#banner {
+  width: 100%;
+}
+
+.principal {
+  background: #cccccc;
+  padding: 30px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#missao {
+  font-size: 20px;
+}
+
+em strong {
+  color: #ff0000;
+}
+
+.itens {
+  font-style: italic;
+}
+
+.beneficios {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.titulo-principal {
+  padding-left: 27px;
+}
+
+.titulo-centralizado {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imagembeneficios {
+  width: 50%;
+}
